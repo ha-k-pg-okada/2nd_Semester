@@ -2,9 +2,13 @@
 #ifndef UNIT_H
 #define UNIT_H
 
+
+
 class Unit
 {
 public:
+
+	
 
 	//コンストラクタ
 	Unit();
@@ -12,7 +16,11 @@ public:
 	//デストラクタ
 	~Unit();
 
-public:
+	void PrintStatus();
+
+private:
+
+	
 
 	int m_hp = 0;
 	int m_str = 0;
