@@ -6,7 +6,7 @@ class Base
 {
 public:
 	Base();
-	virtual ~Base();
+   ~Base();
 
 public:
 	//“–‚½‚è”»’è
