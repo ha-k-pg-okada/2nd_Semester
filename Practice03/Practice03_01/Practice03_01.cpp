@@ -30,6 +30,15 @@ int main()
     printf("MoveSpeed = %0.2f\n", enemy.GetMoveSpeed());
     printf("\n");
 
+    if (player.CheckHit(10,10,20,30) == false)
+    {
+        printf("当たってへんよ～\n");
+    }
+    if (enemy.CheckHit(10,10,20,30) == false)
+    {
+        printf("当たってへんよ～\n");
+    }
+
     system("pause");
     return 0;
 }

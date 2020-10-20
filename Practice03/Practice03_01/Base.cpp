@@ -1,4 +1,5 @@
 #include "Base.h"
+#include <stdio.h>
 
 Base::Base()
 {
@@ -15,8 +16,10 @@ Base::~Base()
 
 }
 
-bool CheckHit(int x1, int y1, int width, int height)
+bool  Base::CheckHit(int x1, int y1, int width, int height)
 {
+	printf("BaseƒNƒ‰ƒX‚ÌCheckHit()\n");
+
 	return false;
 }
 

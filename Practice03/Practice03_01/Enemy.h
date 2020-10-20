@@ -16,6 +16,8 @@ public:
 public:
 	void Exec();
 	void Draw();
+	virtual bool CheckHit(int x1, int y1, int width, int height);
+
 
 private:
 	// Enemyê—p•Ï”
