@@ -16,11 +16,11 @@ Enemy::~Enemy()
 
 void Enemy::Exec()
 {
-
+	printf("Enemy‚ÌExec\n");
 }
 void Enemy::Draw()
 {
-
+	printf("Enemy‚ÌDraw\n");
 }
 
 bool  Enemy::CheckHit(int x1, int y1, int width, int height)

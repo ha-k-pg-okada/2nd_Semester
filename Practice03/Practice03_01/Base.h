@@ -6,9 +6,15 @@ class Base
 {
 public:
 	Base();
-   ~Base();
+   virtual ~Base();
 
 public:
+
+	//継承先で、それぞれ処理の違うことがわかっている関数を
+	//純粋仮想関数として基底クラスに宣言
+	virtual void Exec() = 0;
+	virtual void Draw() = 0;
+
 	//当たり判定
 	//引数の矩形情報と、自分が当たっているか判断
 	virtual bool CheckHit(int x1, int y1, int width, int height);

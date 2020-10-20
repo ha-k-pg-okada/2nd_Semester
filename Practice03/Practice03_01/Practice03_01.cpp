@@ -30,6 +30,8 @@ int main()
         new Enemy()
 
     };
+    array[1]->SetHp(100);
+
 
    /* player->SetMoveSpeed(5.0f);
     enemy->SetHp(100);*/
@@ -39,6 +41,8 @@ int main()
     {
         if (array[i] != nullptr)
         {
+            array[i]->Exec();
+
             printHp(array[i]);
             if (array[i] ->CheckHit(10,10,20,30) == false)
             {
@@ -56,6 +60,11 @@ int main()
         array[i] = nullptr;
 
     }
+
+    //純粋仮想関数を宣言したクラスは
+    //単体で実体化させることができなくなる
+   // Base base;
+    //Base* pBase = new Base();
 
     system("pause");
     return 0;

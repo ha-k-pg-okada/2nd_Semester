@@ -18,6 +18,17 @@ Base::~Base()
 	printf("Baseのデストラクタ\n");
 }
 
+//void Base::Exec()
+//{
+//	printf("BaseのExec\n");
+//}
+//
+//void Base::Draw()
+//{
+//	printf("BaseのDraw\n");
+//}
+
+
 bool  Base::CheckHit(int x1, int y1, int width, int height)
 {
 	printf("BaseクラスのCheckHit()\n");
