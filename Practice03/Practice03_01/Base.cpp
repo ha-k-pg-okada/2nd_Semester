@@ -9,11 +9,13 @@ Base::Base()
 	m_MoveSpeed = 1.0f;
 	m_Width = 10;
 	m_Height = 10;
+
+	printf("Baseのコンストラクタ\n");
 }
 
 Base::~Base()
 {
-
+	printf("Baseのデストラクタ\n");
 }
 
 bool  Base::CheckHit(int x1, int y1, int width, int height)

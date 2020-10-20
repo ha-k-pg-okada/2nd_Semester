@@ -6,38 +6,28 @@
 
 int main()
 {
-    Player player;
-    player.SetMoveSpeed(5.0f);
 
-    Enemy enemy;
-    enemy.SetHp(100);
+    //基底クラスのポインタ変数へ、継続先のクラスのアドレスを代入できる
+    Base* player = new Player();
+    Base* enemy = new Enemy();
 
-    printf("-------------\n");
-    printf("PRACTICE02_04\n");
-    printf("-------------\n");
+    player->SetMoveSpeed(5.0f);
+    enemy->SetHp(100);
 
-    printf("Player Status\n");
-    printf("hp = %d\n",           player.GetHp());
-    printf("PosX = %0.2f\n",      player.GetPosX());
-    printf("PosY = %0.2f\n",      player.GetPosY());
-    printf("MoveSpeed = %0.2f\n", player.GetMoveSpeed());
-    printf("\n");
-
-    printf("Enemy Status\n");
-    printf("hp = %d\n",           enemy.GetHp());
-    printf("PosX = %0.2f\n",      enemy.GetPosX());
-    printf("PosY = %0.2f\n",      enemy.GetPosY());
-    printf("MoveSpeed = %0.2f\n", enemy.GetMoveSpeed());
-    printf("\n");
-
-    if (player.CheckHit(10,10,20,30) == false)
+ 
+    if (player->CheckHit(10,10,20,30) == false)
     {
         printf("当たってへんよ～\n");
     }
-    if (enemy.CheckHit(10,10,20,30) == false)
+    if (enemy->CheckHit(10,10,20,30) == false)
     {
         printf("当たってへんよ～\n");
     }
+
+    delete player;
+    delete enemy;
+
+
 
     system("pause");
     return 0;
